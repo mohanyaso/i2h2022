@@ -1,0 +1,88 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .imgs{
+        border-radius: 50%;
+        padding: 20px;
+    }
+    .images{
+        /* background: blue; */
+        text-align: center;
+        margin: 0;
+        border-radius: 15px;
+    }
+    .faculty-info-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .faculty-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .next-grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background: red; */
+        width: fit-content;
+        height: fit-content;
+        margin: 20px;
+    }
+    .cards-HOD{
+        display: flex;
+        justify-content: center;
+    }
+    .info{
+        background: #4b3666;
+        font-size: 1.5rem;
+        color:white;
+        padding: 20px;
+        font-family: sans-serif;
+        text-align: center;
+        width: 100%;
+        border-bottom-left-radius: 13px;
+        border-bottom-right-radius: 13px;
+    }
+    .inner-div{
+        border: solid 1px gray;
+        border-radius: 15px;
+        width: fit-content;
+        height: fit-content;
+        /* background: red; */
+    }
+    
+    @media(max-width:800px){
+        .next-grid{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media(max-width:600px){
+        .next-grid{
+            grid-template-columns: 1fr;
+            /* background: red; */
+            justify-items: center;
+        }
+        .cards{
+            /* background: red; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    @media (max-width: 1024px) {
+        .info{
+            font-size: 1.1rem;;
+        }
+    }
+    
+    
+    
+    
